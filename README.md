@@ -13,3 +13,6 @@ To setup, run task scheduler
     Screencappy.exe         At log on
     Screencappy.exe         On Workstation unlock of any user
     Clean Screencappy.exe   Daily 8AM (change time as required)
+
+With all the individual photos saved in the folder, you can use your favorite timelapse software to create a timelapse video. 
+If you don't have one, Time Lapse Creator on windows store is free and easy to use. 
