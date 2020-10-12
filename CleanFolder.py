@@ -1,9 +1,3 @@
-#this script looks into specified folder
-#determine today's date
-#find dates of all listed file and create a dictionary
-#create folders for dates in the past
-#move files older than one day into respective date listed
-
 from datetime import datetime
 import time
 from datetime import date
@@ -47,16 +41,5 @@ def main():
             movedir = photopath + "\\" + j[0:10]
             movefile = photopath + "\\" + onlyfiles[z]
             shutil.move(movefile, movedir + "\\" + j)
-
-#code reference
-# import os
-# import shutil
-
-# os.rename("path/to/current/file.foo", "path/to/new/destination/for/file.foo")
-# shutil.move("path/to/current/file.foo", "path/to/new/destination/for/file.foo")
-# os.replace("path/to/current/file.foo", "path/to/new/destination/for/file.foo")
-
-#note: os.rename care about which disk. shutil.move does not care about which disk for storage
-
 
 if __name__ == '__main__': main()
