@@ -9,6 +9,7 @@ import shutil
 def main():
     path = os.environ['USERPROFILE']
     photopath = path + "\\Pictures\\ScreenCappy"
+    
     #list of files save in onlyfiles as a list
     onlyfiles = [f for f in listdir(photopath) if isfile(join(photopath, f))]
 
@@ -34,9 +35,9 @@ def main():
     #if it's not today, move files into folders matching other dates
     for z in range(0, len(onlyfiles)):
         j = onlyfiles[z]
-        if j[0:10] == compare:
+        if j[0:10] == compare: #if file is today, skip to next file
             continue
-        else:
+        else: #if file is not today, move file to corresponding folder by date
             print("move file" + onlyfiles[z])
             movedir = photopath + "\\" + j[0:10]
             movefile = photopath + "\\" + onlyfiles[z]
