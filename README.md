@@ -13,5 +13,3 @@ To setup, run task scheduler
     Screencappy.exe         At log on
     Screencappy.exe         On Workstation unlock of any user
     Clean Screencappy.exe   Daily 8AM (change time as required)
-
-Test Upload
